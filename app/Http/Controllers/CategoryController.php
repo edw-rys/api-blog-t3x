@@ -56,7 +56,7 @@ class CategoryController extends Controller{
             	$category->name = $params_arr['name'];
             	$category->save();
             	$data = array(
-                    'status'  => 'succes',
+                    'status'  => 'success',
                     'code'    => 200,
                     'category'=> $category,
                 );
@@ -86,7 +86,7 @@ class CategoryController extends Controller{
     	    $category = Category::where('id',$id)->update($params_arr);
         	
         	$data = array(
-                'status'  => 'succes',
+                'status'  => 'success',
                 'code'    => 200,
                 'category'=> $params_arr,
             );
